@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
 
   # VERB PATH, to: 'CONTROLLER#ACTION'
+  get 'restaurants', to: 'restaurants#index'
 
   root to: 'pages#home'
 
