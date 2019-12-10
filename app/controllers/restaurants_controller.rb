@@ -4,6 +4,10 @@ class RestaurantsController < ApplicationController
     2 => { name: 'Sushi Samba', address: 'City, London', category: 'japanese' }
   }
 
+  def show
+    @restaurant = RESTAURANTS[params[:id].to_i]
+  end
+
   def index
     if params[:food_type].blank?
       @restaurants = RESTAURANTS
