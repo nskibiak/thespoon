@@ -13,4 +13,9 @@ class RestaurantsController < ApplicationController
       end
     end
   end
+
+  def create
+    raise
+    puts 'something is working'
+  end
 end

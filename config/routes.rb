@@ -5,7 +5,11 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
 
   # VERB PATH, to: 'CONTROLLER#ACTION'
+
+  # http://localhost:3000/restaurants
   get 'restaurants', to: 'restaurants#index'
+
+  post 'restaurants', to: 'restaurants#create'
 
   root to: 'pages#home'
 
