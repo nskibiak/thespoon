@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   # VERB PATH, to: 'CONTROLLER#ACTION'
 
-  get 'restaurants/:id', to: 'restaurants#show'
+  get 'restaurants/:id', to: 'restaurants#show', as: :restaurant
 
   # http://localhost:3000/restaurants
   get 'restaurants', to: 'restaurants#index'

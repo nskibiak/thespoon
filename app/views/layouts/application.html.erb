@@ -12,6 +12,10 @@
   <body>
     <%= yield %>
     <br>
-    <footer>Made @ Le Wagon</footer>
+    <footer>
+      Made @ Le Wagon
+      <%= link_to "About", about_path %>
+      <%= link_to "Contact", contact_path %>
+    </footer>
   </body>
 </html>

@@ -6,9 +6,9 @@
 </form>
 
 <ul>
-  <%  @restaurants.each do |id, restaurant| %>
+  <%  @restaurants.select do |id, restaurant| %>
   <li>
-    <%= restaurant[:name] %> (<%= restaurant[:address] %>)
+    <%= link_to restaurant[:name], restaurant_path(id) %> (<%= restaurant[:address] %>)
   </li>
   <% end %>
 </ul>
